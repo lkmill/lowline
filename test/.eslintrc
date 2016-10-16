@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "airbnb-base",
+    "../.eslintrc"
+  ],
+
+  "parserOptions": {
+    "sourceType": "strict"
+  },
+  
+  "env": {
+    "node": true
+  }
+}
