@@ -9,6 +9,7 @@ export { default as mapValues } from './mapValues';
 export { default as _normalize } from './_normalize';
 export { default as omit } from './omit';
 export { default as pick } from './pick';
+export { default as reduce } from './reduce';
 export { default as snakeCase } from './snakeCase';
 export { default as startCase } from './startCase';
 export { default as without } from './without';
