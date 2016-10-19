@@ -1,5 +1,5 @@
 export default function map(list, iterator) {
-  if (typeof iterator === 'function') {
+  if (typeof iterator !== 'function') {
     throw new TypeError('iterator must be a function');
   }
 

@@ -1,5 +1,5 @@
 export default function forEach(list, iterator) {
-  if (typeof iterator === 'function') {
+  if (typeof iterator !== 'function') {
     throw new TypeError('iterator must be a function');
   }
 
