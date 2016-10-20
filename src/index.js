@@ -10,6 +10,7 @@ export { default as _normalize } from './_normalize';
 export { default as omit } from './omit';
 export { default as pick } from './pick';
 export { default as reduce } from './reduce';
+export { default as throttle } from './throttle';
 export { default as snakeCase } from './snakeCase';
 export { default as startCase } from './startCase';
 export { default as without } from './without';
