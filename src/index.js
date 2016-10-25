@@ -1,5 +1,6 @@
 export { default as bindAll } from './bindAll';
 export { default as camelCase } from './camelCase';
+export { default as defaults } from './defaults';
 export { default as forEach } from './forEach';
 export { default as isEmpty } from './isEmpty';
 export { default as kebabCase } from './kebabCase';
