@@ -5,7 +5,7 @@ export default function unset(obj, path) {
 
   let attr;
 
-  while (obj && (attr = path.shift()) !== null) {
+  while (obj && (attr = path.shift()) != null) {
     if (path.length) {
       obj = obj[attr];
     } else {

@@ -5,7 +5,7 @@ export default function set(obj, path, value) {
 
   let attr;
 
-  while ((attr = path.shift()) !== null) {
+  while ((attr = path.shift()) != null) {
     if (path.length) {
       obj = obj[attr] = {};
     } else {
