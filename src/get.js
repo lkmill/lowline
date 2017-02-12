@@ -1,7 +1,9 @@
-export default function get(obj, path) {
-  if (!obj || typeof path !== 'string') return undefined;
+export default function get(obj, path, defaultValue) {
+  if (!obj || path == null || !path.length) return defaultValue;
 
-  path = path.split('.');
+  if (typeof path === 'string') {
+    path = path.split('.');
+  }
 
   let val = obj;
   let attr;
@@ -10,5 +12,5 @@ export default function get(obj, path) {
     val = val[attr];
   }
 
-  return val;
+  return val === undefined ? defaultValue : val;
 }
