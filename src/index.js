@@ -7,6 +7,7 @@ export { default as entries } from './entries';
 export { default as first } from './first';
 export { default as forEach } from './forEach';
 export { default as get } from './get';
+export { default as has } from './has';
 export { default as head } from './head';
 export { default as invokeMap } from './invokeMap';
 export { default as initial } from './initial';
