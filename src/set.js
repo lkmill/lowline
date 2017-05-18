@@ -1,24 +1,27 @@
 import isObject from './isObject';
 
 export default function set(obj, path, value) {
-  if (!obj || path == null || !path.length) return;
+  if (!obj || path == null || !path.length) return obj;
 
   if (typeof path === 'string') {
     path = path.split('.');
   }
 
   let attr;
+  let ref = obj;
 
   while ((attr = path.shift()) != null) {
     if (path.length) {
-      if (!isObject(obj[attr])) {
-        obj[attr] = {};
+      if (!isObject(ref[attr])) {
+        ref[attr] = {};
       }
 
-      obj = obj[attr];
+      ref = ref[attr];
     } else {
-      obj[attr] = value;
+      ref[attr] = value;
     }
   }
+
+  return obj;
 }
 
