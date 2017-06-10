@@ -1,3 +1,3 @@
-import forEach from './forEach';
+import forEach from './forEach'
 
-export default forEach;
+export default forEach

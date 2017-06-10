@@ -1,3 +1,3 @@
-import toPairs from './toPairs';
+import toPairs from './toPairs'
 
-export default toPairs;
+export default toPairs

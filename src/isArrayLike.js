@@ -1,4 +1,4 @@
-import isLength from './isLength';
+import isLength from './isLength'
 
 /**
  * Copied and modified from Lodash v4.17.4 2017-02-12
@@ -25,6 +25,6 @@ import isLength from './isLength';
  * isArrayLike(Function)
  * // => false
  */
-export default function isArrayLike(value) {
-  return value != null && isLength(value.length) && !(value instanceof Function);
+export default function isArrayLike (value) {
+  return value != null && isLength(value.length) && !(value instanceof Function)
 }

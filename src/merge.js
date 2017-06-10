@@ -1,4 +1,4 @@
-import isObject from './isObject';
+import isObject from './isObject'
 
 /**
  * http://stackoverflow.com/a/34749873
@@ -7,24 +7,24 @@ import isObject from './isObject';
  * @param target
  * @param ...sources
  */
-export default function mergeDeep(target, ...sources) {
-  if (!sources.length) return target;
+export default function mergeDeep (target, ...sources) {
+  if (!sources.length) return target
 
-  const source = sources.shift();
+  const source = sources.shift()
 
   if (isObject(target) && isObject(source)) {
     for (const key in source) {
       if (isObject(source[key])) {
         if (!target[key]) {
-          Object.assign(target, { [key]: {} });
+          Object.assign(target, { [key]: {} })
         }
 
-        mergeDeep(target[key], source[key]);
+        mergeDeep(target[key], source[key])
       } else {
-        Object.assign(target, { [key]: source[key] });
+        Object.assign(target, { [key]: source[key] })
       }
     }
   }
 
-  return mergeDeep(target, ...sources);
+  return mergeDeep(target, ...sources)
 }

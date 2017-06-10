@@ -1,1 +1,1 @@
-export default Object.entries;
+export default Object.entries

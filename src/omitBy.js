@@ -1,9 +1,9 @@
-export default function omitBy(obj, fnc) {
+export default function omitBy (obj, fnc) {
   return Object.keys(obj).reduce((result, key) => {
     if (!fnc(obj[key])) {
-      result[key] = obj[key];
+      result[key] = obj[key]
     }
 
-    return result;
-  }, {});
+    return result
+  }, {})
 }

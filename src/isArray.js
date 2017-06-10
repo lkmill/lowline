@@ -1,1 +1,1 @@
-export default Array.isArray;
+export default Array.isArray

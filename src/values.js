@@ -1,1 +1,1 @@
-export default Object.values;
+export default Object.values

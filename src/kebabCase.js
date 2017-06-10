@@ -1,5 +1,5 @@
-import normalize from './_normalizeCase';
+import normalize from './_normalizeCase'
 
-export default function kebabCase(str) {
-  return normalize(str).join('-');
+export default function kebabCase (str) {
+  return normalize(str).join('-')
 }

@@ -1,19 +1,18 @@
-export default function unset(obj, path) {
-  if (!obj || typeof path !== 'string') return obj;
+export default function unset (obj, path) {
+  if (!obj || typeof path !== 'string') return obj
 
-  path = path.split('.');
+  path = path.split('.')
 
-  let attr;
-  let ref = obj;
+  let attr
+  let ref = obj
 
   while (ref && (attr = path.shift()) != null) {
     if (path.length) {
-      ref = ref[attr];
+      ref = ref[attr]
     } else {
-      delete ref[attr];
+      delete ref[attr]
     }
   }
 
-  return obj;
+  return obj
 }
-
