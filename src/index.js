@@ -1,4 +1,5 @@
 export { default as _normalizeCase } from './_normalizeCase'
+export { default as after } from './after'
 export { default as bindAll } from './bindAll'
 export { default as camelCase } from './camelCase'
 export { default as defaults } from './defaults'
