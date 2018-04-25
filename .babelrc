@@ -1,19 +1,34 @@
 {
   "env": {
     "node": {
-      "presets": [ "es2015-node6" ],
-      "plugins": [
-        "add-module-exports"
-      ]
+      "presets": [[
+        "@babel/env",
+        {
+          "targets": { "node": 6  }
+        }
+      ]],
+      "plugins": [ "add-module-exports" ]
     },
-    "commonjs": {
-      "presets": [ "es2015" ],
-      "plugins": [
-        "add-module-exports"
-      ]
+
+    "cjs": {
+      "presets": [[
+        "@babel/env",
+        {
+          "modules": "commonjs",
+          "shippedProposals": true
+        }
+      ]],
+      "plugins": [ "add-module-exports" ]
     },
+
     "es": {
-      "presets": [ "./babel/preset" ]
+      "presets": [[
+        "@babel/env",
+        {
+          "modules": false,
+          "shippedProposals": true
+        }
+      ]]
     }
   }
 }
