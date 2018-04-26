@@ -1,6 +1,6 @@
 {
   "name": "lowline",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "DOM library",
   "main": "node/index.js",
   "jsnext:main": "es/index.mjs",
