@@ -40,8 +40,5 @@ jspm_packages
 
 /dist
 
-/es
-
-/lib
-
 /*.js
+/*.mjs

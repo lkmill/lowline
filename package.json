@@ -2,19 +2,13 @@
   "name": "lowline",
   "version": "0.2.1",
   "description": "DOM library",
-  "main": "node/index.js",
-  "jsnext:main": "es/index.mjs",
-  "module": "es/index.mjs",
-  "browser": {
-    "node/index.js": "./index.js"
-  },
+  "main": "./index",
   "scripts": {
-    "clean": "rimraf *.js es node",
+    "clean": "rimraf *.mjs *.js",
     "lint": "eslint src",
-    "build": "npm run build:cjs && npm run build:es && npm run build:node",
+    "build": "npm run build:cjs && npm run build:esm",
     "build:cjs": "BABEL_ENV=cjs babel src --out-dir .",
-    "build:es": "BABEL_ENV=es babel src --keep-file-extension --out-dir es",
-    "build:node": "BABEL_ENV=node babel src --out-dir node",
+    "build:esm": "BABEL_ENV=esm babel src --keep-file-extension --out-dir .",
     "test": "BABEL_ENV=node NODE_ENV=testing node test | tap-spec",
     "test:main": "node test/test",
     "prepublish": "npm run clean && npm run lint && npm run build"

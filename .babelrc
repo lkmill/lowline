@@ -1,27 +1,16 @@
 {
   "env": {
-    "node": {
-      "presets": [[
-        "@babel/env",
-        {
-          "targets": { "node": 6  }
-        }
-      ]],
-      "plugins": [ "add-module-exports" ]
-    },
-
     "cjs": {
       "presets": [[
         "@babel/env",
         {
-          "modules": "commonjs",
           "shippedProposals": true
         }
       ]],
       "plugins": [ "add-module-exports" ]
     },
 
-    "es": {
+    "esm": {
       "presets": [[
         "@babel/env",
         {
