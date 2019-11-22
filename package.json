@@ -5,7 +5,7 @@
   "main": "./index",
   "scripts": {
     "clean": "rimraf *.mjs *.js",
-    "lint": "eslint src",
+    "lint": "eslint src --ext .mjs --ext .js",
     "build": "npm run build:cjs && npm run build:esm",
     "build:cjs": "BABEL_ENV=cjs babel src --out-dir .",
     "build:esm": "BABEL_ENV=esm babel src --keep-file-extension --out-dir .",
@@ -27,18 +27,18 @@
   },
   "homepage": "https://github.com/lohfu/lowline#readme",
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.46",
-    "@babel/core": "^7.0.0-beta.46",
-    "@babel/preset-env": "^7.0.0-beta.46",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "eslint": "^4.19.1",
-    "eslint-config-standard": "^11.0.0",
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.0",
+    "@babel/preset-env": "^7.7.0",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "eslint": "^6.6.0",
+    "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.11.0",
-    "eslint-plugin-node": "^6.0.1",
-    "eslint-plugin-promise": "^3.7.0",
-    "eslint-plugin-standard": "^3.1.0",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
     "lodash": "^4.17.10",
-    "rimraf": "^2.6.2"
+    "rimraf": "^3.0.0"
   },
   "dependencies": {}
 }
