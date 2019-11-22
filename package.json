@@ -1,6 +1,6 @@
 {
   "name": "lowline",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "DOM library",
   "main": "./cjs/index.js",
   "module": "./esm/index.mjs",
