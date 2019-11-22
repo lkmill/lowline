@@ -2,13 +2,14 @@
   "name": "lowline",
   "version": "0.2.2",
   "description": "DOM library",
-  "main": "./index",
+  "main": "./cjs/index.js",
+  "module": "./esm/index.mjs",
   "scripts": {
-    "clean": "rimraf *.mjs *.js",
+    "clean": "rimraf cjs esm",
     "lint": "eslint src --ext .mjs --ext .js",
     "build": "npm run build:cjs && npm run build:esm",
-    "build:cjs": "BABEL_ENV=cjs babel src --out-dir .",
-    "build:esm": "BABEL_ENV=esm babel src --keep-file-extension --out-dir .",
+    "build:cjs": "BABEL_ENV=cjs babel src --out-dir cjs",
+    "build:esm": "BABEL_ENV=esm babel src --keep-file-extension --out-dir esm",
     "test": "BABEL_ENV=node NODE_ENV=testing node test | tap-spec",
     "test:main": "node test/test",
     "prepublish": "npm run clean && npm run lint && npm run build"
