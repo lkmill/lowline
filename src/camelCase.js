@@ -1,4 +1,4 @@
-import normalize from './_normalizeCase'
+import normalize from './_normalizeCase.js'
 
 export default function camelCase (str) {
   const arr = normalize(str)

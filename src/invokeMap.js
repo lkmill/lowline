@@ -1,4 +1,4 @@
-import isArrayLike from './isArrayLike'
+import isArrayLike from './isArrayLike.js'
 
 export default function invokeMap (arr, fnc, ...args) {
   if (!Array.isArray(arr)) {

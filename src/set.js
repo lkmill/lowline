@@ -1,4 +1,4 @@
-import isObject from './isObject'
+import isObject from './isObject.js'
 
 export default function set (obj, path, value) {
   if (!obj || path == null || !path.length) return obj

@@ -1,4 +1,4 @@
-import isObject from './isObject'
+import isObject from './isObject.js'
 
 /**
  * http://stackoverflow.com/a/34749873

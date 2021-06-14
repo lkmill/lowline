@@ -15,3 +15,7 @@ on the server.
 
 Lowline does not aim to be backwards compatible; the main goal is to make each
 isolated module and the package as a whole as light as possible.
+
+## Condtional Exports
+
+Are only available (because of patterns) in Node ^12.20, ^14.13 and >=15.
