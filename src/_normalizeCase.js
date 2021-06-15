@@ -1,3 +1,7 @@
+/**
+ * @param {string} str
+ * @returns {string[]}
+ */
 export default function normalize (str) {
   // TODO trim
   let arr = str.split(/[\s-_.]/)

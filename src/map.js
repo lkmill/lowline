@@ -1,3 +1,7 @@
+/**
+ * @param {Array | string | Object} list
+ * @param {(value: any, key: any) => any} iterator
+ */
 export default function map (list, iterator) {
   if (typeof iterator !== 'function') {
     throw new TypeError('iterator must be a function')

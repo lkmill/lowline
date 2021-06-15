@@ -1,4 +1,10 @@
-// currently only supports dot case
+/**
+ * currently only supports dot case
+ *
+ * @param {Object} obj
+ * @param {string} path
+ * @returns {boolean}
+ */
 export default function has (obj, path) {
   if (!obj || path == null || !path.length) return false
 

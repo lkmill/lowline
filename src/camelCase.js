@@ -1,5 +1,11 @@
 import normalize from './_normalizeCase.js'
 
+/**
+ * Converts `str` to [camel case](https://en.wikipedia.org/wiki/CamelCase).
+ *
+ * @param {string} [str=''] The string to convert.
+ * @returns {string} Returns the camel cased string.
+ */
 export default function camelCase (str) {
   const arr = normalize(str)
 

@@ -1,3 +1,9 @@
+/**
+ * @param {Object} obj
+ * @param {string} path
+ * @param {*} [defaultValue]
+ * @returns {Object}
+ */
 export default function get (obj, path, defaultValue) {
   if (!obj || path == null || !path.length) return defaultValue
 
