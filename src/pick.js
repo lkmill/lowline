@@ -1,11 +1,19 @@
-export default function pick (obj, ...args) {
-  const pick = args.length === 1 && Array.isArray(args[0]) ? args[0] : args
+/**
+ * Creates an object composed of the picked `object` properties.
+ *
+ * @param {Object} object The source object.
+ * @param {...(string|string[])} paths The property paths to pick.
+ * @returns {Object} Returns the new object.
+ * @example
+ */
+export default function pick(object, ...paths) {
+  const pick = paths.some((path) => Array.isArray(path)) ? (paths.length === 1 ? paths[0] : [].concat(...paths)) : paths
 
-  return Object.keys(obj).reduce((result, key) => {
-    if (pick.includes(key)) {
-      result[key] = obj[key]
-    }
+  const result = {}
 
-    return result
-  }, {})
+  for (const key of pick) {
+    if (key in object) result[key] = object[key]
+  }
+
+  return result
 }
